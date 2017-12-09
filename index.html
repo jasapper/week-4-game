@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="assets/javascript/game.js"></script>
+    <title>Jason's CrystalsCollector Game</title>
+</head>
+<body> 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			<h1>CrystalsCollector!</h1>
+			<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" id="instructions">
+			<p>You will be given a random number at the start of the game.</p>
+			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+			<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+			<p>Each time when the game starts, the game will change the values of each crystal.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 randombox">
+			<div id="randomNumber"></div>
+			</div>
+			<div class="col-md-1" id="win-lose">
+			<div>Wins: <span id="wins"></span></div>
+			<div>Losses: <span id="lose"></span></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 btn-toolbar gemsgroup">
+			<button class="btn btn-default" id="gemBlue"><img src="assets/images/blue_crystal.png" width="125"></button>
+			<button class="btn btn-default" id="gemOrange"><img src="assets/images/orange_crystal.png" width="125"></button>
+			<button class="btn btn-default" id="gemPurple"><img src="assets/images/purple_crystal.png" width="125"></button>
+			<button class="btn btn-default" id="gemPink"><img src="assets/images/pink_crystal.png" width="125"></button>
+			</div>
+		</div>
+		<div class="row"> 
+			<div class="col-md-4" id="total">
+			<p>Your total score is:</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4" id="scoredisplay">
+			<div id="score"></div>
+			</div>
+		</div>
+</div>
+</body>
+</html>
