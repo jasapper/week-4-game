@@ -14,6 +14,16 @@ h1  {
 
 hr  {
         background: grey;
-        height: 2px;
+        height: 1px;
         border: none;
+}
+
+img {
+    width: 125px;
+}
+
+#gem-row {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: auto;
 }
