@@ -27,3 +27,7 @@ img {
     padding-bottom: 24px;
     margin: auto;
 }
+
+#userScore, #randomNumber  {
+    font-size: 20px; 
+}

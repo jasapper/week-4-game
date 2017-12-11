@@ -24,7 +24,7 @@ function nextGame() {
 	randomNumber = Math.floor(Math.random()*(targetMax - targetMin + 1)) + targetMin;
 	$("#randomNumber").html(randomNumber);
 	totalScore = 0;
-	$("#score").html(totalScore);
+	$("#userScore").html(totalScore);
 
 	gemBlue = Math.floor(Math.random() * 12) + 1;
 	gemOrange = Math.floor(Math.random() * 12) + 1;
@@ -36,7 +36,7 @@ function nextGame() {
 function checkWin(){
 	if(totalScore === randomNumber){
 		countWin++;
-		$("#wins").html(countWin);
+		$("#userWins").html(countWin);
 		alert("That's a WIN buddy!! Final score (" + totalScore + ") matches target (" + randomNumber + ").");
 		gameOver = true;
 		nextGame();
@@ -47,7 +47,7 @@ function checkWin(){
 function checkLoss(){
 	if(totalScore > randomNumber){
 		countLoss++;
-		$("#lose").html(countLoss);
+		$("#userLosses").html(countLoss);
 		alert("Game over man, game over! Final score: " + totalScore + " ( > " + randomNumber + ")");
 		nextGame();
 	}
@@ -61,28 +61,28 @@ $("#randomNumber").append(randomNumber);
 // When each crystal is clicked, the number assigned to it will be added to user's current score
 $("#gemBlue").on("click", function(){
 	totalScore += gemBlue;
-	$("#score").html(totalScore);
+	$("#userScore").html(totalScore);
 	checkWin();
 	checkLoss();
 });
 
 $("#gemOrange").on("click", function(){
 	totalScore += gemOrange;
-	$("#score").html(totalScore);
+	$("#userScore").html(totalScore);
 	checkWin();
 	checkLoss();
 });
 
 $("#gemPurple").on("click", function(){
 	totalScore += gemPurple;
-	$("#score").html(totalScore);
+	$("#userScore").html(totalScore);
 	checkWin();
 	checkLoss();
 });
 
 $("#gemPink").on("click", function(){
 	totalScore += gemPink;
-	$("#score").html(totalScore);
+	$("#userScore").html(totalScore);
 	checkWin();
 	checkLoss();
 });
